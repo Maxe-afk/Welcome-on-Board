@@ -1,0 +1,270 @@
+:root {
+	--primary-color: #A306B6;
+	--article-background: #D9D9D9;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	height: 100vh;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+footer {
+	background-color: var(--article-background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: .8rem;
+	width: 100%;
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+	nav {
+		display: grid;
+		grid-template-columns: 3rem 1fr .5fr;
+		grid-template-rows: 3rem 1fr;
+		background-color: var(--primary-color);
+		justify-content: space-around;
+		align-items: center;
+		height: 30rem;
+		color: whitesmoke;
+		width: 100%;
+		padding: .5rem;
+
+		.Navatar {
+			height: 15rem;
+			width: 15rem;
+		}
+
+		.navwcs {
+			height: 2rem;
+			width: 2rem;
+			grid-column-start: 1;
+			grid-column-end: 1;
+			grid-row-start: 1;
+			grid-row-end: 1;
+		}
+
+		.navlinks {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			gap: 2rem;
+			grid-column-start: 3;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 1;
+		}
+	}
+
+	h2 {
+		color: var(--primary-color);
+		font-family: Montserrat;
+		font-weight: 700;
+	}
+
+	.AboutText {
+		display: block;
+		width: 30rem;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.ArticleContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.ArticleLinks {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: var(--article-background);
+		color: black;
+		height: 20rem;
+		width: 22rem;
+		border-radius: 1rem;
+		padding: .5rem;
+	}
+
+	.ArticleTitles {
+		color: black
+	}
+
+	.ArticleLogo {
+		height: 15rem;
+		width: 16rem;
+	}
+
+	.ArticleLogo2 {
+		height: 14rem;
+		width: 14rem;
+	}
+
+	button {
+		border-style: none;
+		background-color: var(--primary-color);
+		font-family: Montserrat;
+		border-radius: 1rem;
+		color: whitesmoke;
+		text-decoration: none;
+		height: 2rem;
+		font-weight: 600;
+		width: 5rem;
+	}
+
+	footer {
+		background-color: var(--article-background);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: .8rem;
+		width: 100%;
+	}
+
+	.navp2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.ArticleContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.ArticleLinks {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: var(--article-background);
+		color: black;
+		height: 20rem;
+		width: 22rem;
+		border-radius: 1rem;
+		padding: .5rem;
+	}
+
+	.ArticleLogo {
+		height: 15rem;
+		width: 16rem;
+	}
+
+	.ArticleLogo2 {
+		height: 13rem;
+		width: 15rem;
+	}
+
+	button {
+		border-style: none;
+		background-color: var(--primary-color);
+		font-family: Montserrat;
+		border-radius: 1rem;
+		color: whitesmoke;
+		text-decoration: none;
+		height: 2rem;
+		font-weight: 600;
+		width: 5rem;
+	}
+
+	.navwcs {
+		height: 2rem;
+		width: 2rem;
+		justify-self: center;
+		align-self: center;
+	}
+
+	.Navatar {
+		height: 10rem;
+		width: 10rem;
+		justify-self: center;
+		align-self: center;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--primary-color);
+		padding: .5rem;
+	}
+
+	.navlinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.AboutText {
+		display: block;
+		width: 18rem;
+	}
+
+	#About {
+		color: var(--primary-color)
+	}
+
+	h1 {
+		color: whitesmoke;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navp2 {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
